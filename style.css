@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    /* background: url(Clouds-66.7s-852px.png); */
+}
+
+span {
+    position: absolute;
+    /* width: 20px;
+    height: 20px;
+    background: black; */
+    background: url(money.png);
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: animate 4s linear infinite; 
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -1000%);
+        opacity: 0;
+    }
+}
